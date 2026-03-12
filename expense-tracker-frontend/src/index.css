@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@keyframes floatMoney {
+    0% {
+      transform: translateY(0px);
+      opacity: 0.8;
+    }
+    50% {
+      transform: translateY(-30px);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(0px);
+      opacity: 0.8;
+    }
+  }
+  
+  .money-float {
+    animation: floatMoney 6s ease-in-out infinite;
+  }
+  
+  .gradient-bg {
+    background: linear-gradient(-45deg, #3b82f6, #10b981, #06b6d4, #6366f1);
+    background-size: 400% 400%;
+    animation: gradientMove 12s ease infinite;
+  }
+  
+  @keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
